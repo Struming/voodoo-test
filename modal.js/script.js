@@ -1,9 +1,12 @@
-// Отримуємо посилання на елементи
-var buttonModalInfo = document.querySelector('.button-modal-info');
-var buttonVector = buttonModalInfo.querySelector('.button-vector');
-var modal = document.querySelector('.modal');
+const getProductList = async () => {
+    try {
+    const response = await fetch('https://voodoo-sandbox.myshopify.com/products.json?limit=12');
+    const data = await response.json();
+    const productList = data.products;
+    console.log(productList);
+    } catch (error) {
+    console.log('Error:', error);
+    }
+};
 
-// Додаємо обробник події для кнопки зображення
-buttonVector.addEventListener('click', function() {
-  modal.classList.toggle('expanded');
-});
+getProductList();

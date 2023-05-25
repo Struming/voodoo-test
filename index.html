@@ -28,46 +28,41 @@
         </div>
     </header>
     <!--Main-->
-    <main>
-        <div class="container button-modal-cont">
-            <div class="modal-container">
-                <button class="button-modal-info">
-                    <img src="./img/alert-circle.svg" alt="warning" class="button-alert">
-                    <h2 class="button-title">ALPHA</h2>
-                    <p class="text-button">Important info regarding our service</p>
-                    <img src="./img/Vector.svg" alt="vector" class="button-vector">
-                </button>
-        <div class="container  modal-">
-                <div class="modal">
-                    <p class="modal-text">We're working on a new service to offer you returned online goods at a discount near you.</p>
-                    <div class="modal-info-list">
-                        <div class="modal-info">
-                            <h3 class="modal-title">CURRENTLY</h3>
-                            <ul class="modal-list list">
-                                <li class="text-modal-list">1. Very limited assortment of items that we resell</li>
-                                <li class="text-modal-list">2. All sorts of product categories</li>
-                                <li class="text-modal-list">3. Focus on testing the ordering and pick-up experience</li>
-                            </ul>
-                            <div class="Line-modal">
-                                <img src="./img/Line 1.svg" alt="Line" width="30">
-                                <img src="./img/Line 1.svg" alt="Line" width="30">
-                                <img src="./img/Line 1.svg" alt="Line" width="30">
-                            </div>
-                        </div>
+    <main >
+        <details class="container container-summary">
+            <summary class="detals-info" onclick="rotateVector()">
+              <img src="./img/alert-circle.svg" alt="warning" class="button-alert">
+              <h2 class="detalis-title">ALPHA</h2>
+              <p class="detalis-button">Important info regarding our service</p>
+              <img src="./img/Vector.svg" alt="vector" class="detalis-vector" id="vector">
+            </summary>
+            <div class="hidden-content color">
+                <div class="container-summary ">
+                    <p class="detals-text">We’re working on a new service to offer you returned online goods at a discount near you.</p>
+                    <div class="cont-sam list">
+                        <h2 class="title">CURRENTLY</h2>
+                        <ul class="detals-list "></ul>
+                            <li class="detals-item">1. Very limited assortment of items that we resell</li>
+                            <li class="detals-item">2. All sorts of product categories</li>
+                            <li class="detals-item">3. Focus on testing the ordering and pick-up experience</li>
+                        </ul>
                     </div>
-                    <div class="modal-info-list">
-                        <h3 class="modal-title">FUTURE</h3>
-                        <ul class="modal-list list">
-                            <li class="text-modal-list">1. Returned items from other shoppers</li>
-                            <li class="text-modal-list">2. Select product categories</li>
-                            <li class="text-modal-list">3. Focus on end-to-end service experience</li>
+                    <div class="cont-line">
+                        <img src="./img/Line 1.svg" alt="Line_1" class="detals-line">
+                        <img src="./img/Line 1.svg" alt="Line_1" class="detals-line">
+                        <img src="./img/Line 1.svg" alt="Line_1" class="detals-line">
+                    </div>
+                    <div class="cont-sam-future list">
+                        <h2 class="title">FUTURE</h2>
+                        <ul class="detals-list "></ul>
+                            <li class="detals-item">1. Returned items from other shoppers </li>
+                            <li class="detals-item">2. Select product categories</li>
+                            <li class="detals-item">3. Focus on end-to-end service experience</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-</div>
-</div>
+        </details>
         <!--Products - Section-->
         <div class="container container-product">
             <div class="product-galery">
@@ -173,51 +168,54 @@
             </div>
 
         </div>
-        <!--E-mail - Section-->
-        <div class="container E-mail-container">
-            <h3 class="title-email">Be the first one to know when we launch our beta!</h3>
-            <form class="form-nav">
-                <label for="name-email" class="name-email-title">
-                <input type class="E-mail-input" name="email" placeholder="E-mail" >
-                </label>
-                <button class="form-button" type="submit">Sign-up</button>
-            </form>
-        </div>
-    </main>
-    <!--Footer -->
-    <footer class="footer">
-    <div class="container footer-cont ">
-        <a href="">
-            <img src="./img/Logomark.svg" alt="logomark" class="logo-footer">
-        </a>
-        <div class="fot-stolb"> 
-            <ul class="footer-list list">
-                <li class="footer-item">FAQ</li>
-                <li class="footer-item">RETURNS</li>
-                <li class="footer-item" >CONTACT</li>
-            </ul>
-        </div>
-        <div class="fot-stolb-list">
-            <ul class="footer-list list">
-                <li class="footer-item">TERMS & CONDITIONS</li>
-                <li class="footer-item">PRIVACY POLICY</li>
-                <li class="footer-item" >COOKIE POLICY</li>
-                <li class="footer-item" >COOKIE SETTINGS</li>
-            </ul>
-        </div>
-        <div class="fot-stolb-li">
-            <ul class="footer-list list">
-                <li class="footer-item-list">ABOUT SECOND CHANCE</li>
-                <li class="footer-item-list">CAREERS</li>
-                <li class="footer-item-list" >FACEBOOK</li>
-                <li class="footer-item-list" >INSTAGRAM</li>
-            </ul>
-        </div>
-        
-        
-    </div>
-    </footer>
-
+                <!--E-mail - Section-->
+                <div class="container E-mail-container">
+                    <h3 class="title-email">Be the first one to know when we launch our beta!</h3>
+                    <form class="form-nav">
+                        <label for="name-email" class="name-email-title">
+                        <input type class="E-mail-input" name="email" placeholder="E-mail" >
+                        </label>
+                        <button class="form-button" type="submit">Sign-up</button>
+                    </form>
+                </div>
+            </main>
+            <!--Footer -->
+            <footer class="footer">
+            <div class="container footer-cont ">
+                <div class="footer-logo-cont"> 
+                    <a href="">
+                    <img src="./img/Logomark.svg" alt="logomark" class="logo-footer">
+                </a>
+                </div>
+                <div class="fot-stolb"> 
+                    <ul class="footer-list list">
+                        <li class="footer-item">FAQ</li>
+                        <li class="footer-item">RETURNS</li>
+                        <li class="footer-item" >CONTACT</li>
+                    </ul>
+                </div>
+                <div class="fot-stolb-list">
+                    <ul class="footer-list list">
+                        <li class="footer-item">TERMS & CONDITIONS</li>
+                        <li class="footer-item">PRIVACY POLICY</li>
+                        <li class="footer-item" >COOKIE POLICY</li>
+                        <li class="footer-item" >COOKIE SETTINGS</li>
+                    </ul>
+                </div>
+                <div class="fot-stolb-li">
+                    <ul class="footer-list list">
+                        <li class="footer-item-list">ABOUT SECOND CHANCE</li>
+                        <li class="footer-item-list">CAREERS</li>
+                        <li class="footer-item-list" >FACEBOOK</li>
+                        <li class="footer-item-list" >INSTAGRAM</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            </footer>
+    
     <script src="modal.js/script.js"></script>
+    <script src="modal.js/vector.js"></script>
 </body>
 </html>

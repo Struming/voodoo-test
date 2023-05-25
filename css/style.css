@@ -75,54 +75,132 @@ ul{
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border: 2px solid transparent; /* Додаємо початковий бордер */
 }
 
 .header-button2:hover,
 .header-button2:focus {
     background-color: #ED5E21;
+    border-color: #ED5E21; 
 }
-
 
 /* __________________Main______________ */
-.button-modal-cont {
-    padding-top: 66px;
-    padding-bottom: 48px;
-    padding-right: 120px;
-    padding-left: 120px;
-}
 
-.button-modal-info {
+.rotate {
+    transform: rotate(-180deg);
+  }
+  
+
+
+
+
+
+.detals-info{
     display: inline-flex;
     align-items: center;
     padding: 24px;
     gap: 10px;
-    width: 1272px;
-    height: 72px;
     background: #000000;
-    border-radius: 4px;
+    margin-top: 100px;
+    
 }
 
-.button-title {
+.detalis-modal-cont {
+    padding-top: 66px;
+    padding-bottom: 48px;
+    width: 1272px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.detalis-title {
     font-size: 16px;
     line-height: 1.5;
     color: #FCF7E6;
-    margin-right: 48px;
+    margin-right: 38px;
 }
 
-.text-button {
+.detalis-button {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
 color: #FCF7E6;
 margin-right: auto;
 }
-/*______________Modal vindow______________*/
+.container-summary {
+    background: #000000;
+    gap: 10px;
+    width: 1250px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+.detals-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FCF7E6;
+    border-top: 1px solid #FCF7E6;
+    border-bottom: 1px solid #FCF7E6;
+padding: 0px;
+padding-top: 24px;
+padding-bottom: 24px;
+width: 1018px;
+margin-left:152px;
+}
+
+.cont-sam{
+margin-right: 48px;
+padding-left: 152px;
+padding-bottom: 32px;
+
+}
+.cont-sam-det{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+width: 254px;
+}
+
+.title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2;
+color: #FCF7E6;
+margin-bottom: 16px;
+margin-top: 24px;
+}
+
+.detals-item {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.0;
+color: #FCF7E6;
+margin-bottom: 16px;
+
+}
+.cont-sam-future {
+    padding-bottom: 32px;
+}
+.cont-line {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+width: 31px;
+margin-right: 48px;
+margin-top: 40px;
+padding-bottom: 32px;
+}
 
 /*______________Products - Section______________*/
 .container-product{
     width: 1272px;
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-top: 48px;
 }
 .product-list {
     display: flex;
@@ -185,12 +263,17 @@ color: #000000;
 .product-item:hover .none-button {
     display: flex;
 }
+
 /*______________E-mail - Section______________*/
 
 .E-mail-container {
-    padding-top: 198px;
-    padding-bottom: 56px;
+    padding-top: 96px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .title-email {
     font-weight: 400;
     font-size: 20px;
@@ -199,15 +282,17 @@ color: #000000;
     color: #000000;
     margin-bottom: 24px;
 }
+
 .form-nav{
     display: flex;
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .E-mail-input {
     width: 518px;
     height: 43px;
-    padding-left: 16px ;
+    padding-left: 16px;
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
@@ -216,9 +301,11 @@ color: #000000;
     margin-right: 12px;
     color: #000000; 
 }
+
 .E-mail-input::placeholder {
     color: #000000; 
 }
+
 .form-button {
     display: inline-block;
     padding: 10px 20px;
@@ -238,6 +325,7 @@ color: #000000;
     background-color: #000000;
     color: #FFFFFF;
 }
+
 
 /*______________Footer______________*/
 .footer {
@@ -259,26 +347,43 @@ color: #000000;
     padding-bottom: 84px;
     background-color: #FFFFFF;
     display: flex;
+    justify-content: center;
+}
+
+
+.footer-logo-cont{
+    width: 200px;
+    margin-right: 23px;
+    margin-left: 120px;
 }
 .logo-footer {
-width: 82px;
-padding-left: 230px;
-margin-right: 182px; 
+    width: 82px;
 }
-.fot-stolb{
-    margin-right: 71px;
+
+.fot-stolb {
+    width: 300px;
+    margin-right: 23px;
+}
+
+.fot-stolb-list {
+    margin-right: 23px;
     width: 300px;
 }
+
+.fot-stolb-li {
+    width: 300px;
+}
+
 .footer-item {
     font-family: 'Space Mono';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     color: #000000;
-    margin-right: 72px;
     margin-bottom: 10px;
 }
-.footer-item-list{
+
+.footer-item-list {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
@@ -286,5 +391,6 @@ margin-right: 182px;
     line-height: 1.2;
     color: #000000;
     margin-bottom: 10px;
-    
 }
+
+
